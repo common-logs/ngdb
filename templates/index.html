@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" type="text/css" />
+
+		<title>Tree Management</title>
+	</head>
+	<body>
+		<section>
+			<div class="form-box">
+				<div class="form-value">
+					<form action="" method="get">
+						<h2>Welcome, {{ name }}</h2>
+						<div class="inputbox">
+							<input type="text" name="loca" required>
+							<label for="">Location</label>
+						</div>
+						<div class="inputbox">
+							<input type="text" name="area" required>
+							<label for="">Area</label>
+						</div>
+						<div class="inputbox">
+							<input type="Treename" name="tree" required>
+							<label for="">Tree</label>
+						</div>
+						<div class="inputbox">
+							<input type="Count" name="count" required>
+							<label for="">Count</label>
+						</div>
+						<button type="submit" formaction="http://localhost:5000/add">Add</button>
+						<button type="submit" formaction="http://localhost:5000/view">View</button>
+					</form>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
+
